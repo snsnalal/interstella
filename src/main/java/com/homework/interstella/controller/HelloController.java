@@ -12,4 +12,9 @@ public class HelloController {
         model.addAttribute("hello", "hello world!");
         return "hello";
     }
+    @GetMapping("/main")
+    public String printMain(Model model){
+        model.addAttribute("index", "hello index main!");
+        return "index";
+    }
 }
