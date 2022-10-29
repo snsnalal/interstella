@@ -12,7 +12,7 @@ import javax.validation.constraints.*;
 @RequiredArgsConstructor
 public class ResponseDto {
 
-    @NotNull
+    @NotNull(message = "입력 값이 없습니다.")
     @Min(value = 1, message = "입력 값이 범위 밖입니다.")
     @Max(value = 10000, message = "입력 값이 범위 밖입니다.")
     private Integer t;
