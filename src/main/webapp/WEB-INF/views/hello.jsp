@@ -6,6 +6,6 @@ pageEncoding="UTF-8" %>
     <title>Document</title>
 </head>
 <body>
- ${hello} hello.jsp
+${hello}
 </body>
 </html>
