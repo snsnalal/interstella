@@ -78,7 +78,7 @@
                 document.getElementById("result").value = xmlHttpRequest.response;
 
             }else{
-                alert(xmlHttpRequest.response);
+                alert(xmlHttpRequest.responseText);
             }
         }
     }
