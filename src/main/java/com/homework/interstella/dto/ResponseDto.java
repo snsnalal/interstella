@@ -16,10 +16,10 @@ public class ResponseDto {
     @Min(value = 1, message = "입력 값이 범위 밖입니다.")
     @Max(value = 10000, message = "입력 값이 범위 밖입니다.")
     private Integer t;
-    @NotNull
+    @NotNull(message = "입력 값이 없습니다.")
     private Integer k;
-    @NotNull
+    @NotNull(message = "입력 값이 없습니다.")
     private int[] piList;
-    @NotNull
+    @NotNull(message = "입력 값이 없습니다.")
     private int[] niList;
 }

@@ -41,7 +41,7 @@ public class HomeworkController {
     @PostMapping("/main")
     public ResponseEntity<String> calcChange(@RequestBody @Valid ResponseDto responseDto, BindingResult result){
         if(result.hasErrors()){
-            return new ResponseEntity<>(result.toString(), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(result.getFieldError().getDefaultMessage(), HttpStatus.BAD_REQUEST);
         }
 
         int num = homeworkService.calcProblem2(responseDto);
