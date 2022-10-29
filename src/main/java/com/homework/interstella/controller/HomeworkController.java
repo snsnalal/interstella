@@ -46,6 +46,6 @@ public class HomeworkController {
 
         int num = homeworkService.calcProblem2(responseDto);
 
-        return ResponseEntity.ok("총 " + num + "가지 입니다.");
+        return ResponseEntity.ok("총 " + num + "가지");
     }
 }
